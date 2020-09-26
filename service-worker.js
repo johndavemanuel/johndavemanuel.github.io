@@ -1,9 +1,9 @@
 var staticCacheName = 'cacheCoreV1';
 var filesToCache = [
-  '/',
-  'index.html',
-	'js/main.js',
-	'css/main.css',
+  'https://johndavemanuel.github.io/',
+  'https://johndavemanuel.github.io/index.html',
+	'https://johndavemanuel.github.io/js/main.js',
+	'https://johndavemanuel.github.io/css/main.css',
 ];
 
 // Start the service worker and cache all of the app's shell content
