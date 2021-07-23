@@ -6,7 +6,7 @@
 	"background_color": "#ffffff",
 	"display": "standalone",
 	"orientation": "portrait",
-	"start_url": "index.html",
+	"start_url": "https://johndavemanuel.github.io/",
 	"icons": [{
 			"src": "images/icons/icon-192x192.png",
 			"sizes": "192x192",
