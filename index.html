@@ -6,7 +6,7 @@
 	<meta name="description" content="John Dave Manuel - Frontend Web Developer" />
 	<meta name="author" content="John Dave Manuel">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<meta name="theme-color" content="#000000"/>
+	<meta name="theme-color" content="#000000" />
 	<link rel="manifest" href="manifest.json">
 	<title>John Dave Manuel- Frontend Web Developer</title>
 	<link rel="shortcut icon" href="images/icons/favicon.ico">
@@ -39,10 +39,14 @@
 										<div class="home-text hp-left pl-0">
 											<h4>Frontend Web Developer</h4>
 											<h1>John Dave Manuel</h1>
-											<p class="text-center text-md-left">Building simple and beautiful things for complex interfaces is what I enjoy most about my work. I am also interested in crafting beautiful minimal products and exploring new worlds.</p>
+											<p class="text-center text-md-left">Building simple and beautiful things for complex interfaces is
+												what I enjoy most about my work. I am also interested in crafting beautiful minimal products and
+												exploring new worlds.</p>
 											<div class="home-buttons">
-												<a href="https://github.com/johndavemanuel" target="_blank" class="btn btn-primary" title="Github"><i class="fab fa-github"></i></a>
-												<a href="https://www.linkedin.com/in/johndavemanuel/" target="_blank" class="btn btn-primary" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+												<a href="https://github.com/johndavemanuel" target="_blank" class="btn btn-primary"
+													title="Github"><i class="fab fa-github"></i></a>
+												<a href="https://www.linkedin.com/in/johndavemanuel/" target="_blank" class="btn btn-primary"
+													title="LinkedIn"><i class="fab fa-linkedin"></i></a>
 											</div>
 										</div>
 									</div>
@@ -60,7 +64,8 @@
 											<h5 class="item-period current">Oct 2019 – Present</h5>
 											<span class="item-company">STOK MNL Inc.</span>
 											<h4 class="item-title">Frontend Web Developer (Full-time)</h4>
-											<div>Responsible for building and testing responsive websites. Your primary focus is to translate the UI/UX design into functional code.</div>
+											<div>Responsible for building and testing responsive websites. Your primary focus is to translate
+												the UI/UX design into functional code.</div>
 											<ul>
 												<li>Estimate tasks and projects together with team members.</li>
 												<li>Plan and structure code and modules together with team members.</li>
@@ -74,7 +79,8 @@
 											<h5 class="item-period current">Jan 2019 – Sep 2019</h5>
 											<span class="item-company">Singapore Nextus Pte. Ltd.</span>
 											<h4 class="item-title">Frontend Web Developer (Freelance)</h4>
-											<div>I am responsible for building the ‘client-side’ of the web applications, translate the company and customer needs into functional and appealing interactive applications.</div>
+											<div>I am responsible for building the ‘client-side’ of the web applications, translate the
+												company and customer needs into functional and appealing interactive applications.</div>
 											<ul>
 												<li>Determining the structure and design of web pages.</li>
 												<li>Developing features to enhance the user experience.</li>
@@ -90,7 +96,9 @@
 											<h5 class="item-period current">Jan 2017 – Dec 2018</h5>
 											<span class="item-company">Anydecide Holdings Corporation</span>
 											<h4 class="item-title">Frontend Web Developer (Full-time)</h4>
-											<div>I worked with the UI/UX designer and bridge the gap between graphical design and technical implementation, taking an active role on both sides and defining how the application looks as well as how it works.</div>
+											<div>I worked with the UI/UX designer and bridge the gap between graphical design and technical
+												implementation, taking an active role on both sides and defining how the application looks as
+												well as how it works.</div>
 											<ul>
 												<li>Creating website layout/user interfaces by using standard HTML/CSS/JS practices.</li>
 												<li>Testing sites and applications in different browsers and environments.</li>
@@ -123,7 +131,8 @@
 								<h2>Clients</h2>
 							</div>
 
-							<div id="clients_1" class="clients owl-carousel" data-mobile-items="1" data-tablet-items="3" data-items="6">
+							<div id="clients_1" class="clients owl-carousel" data-mobile-items="1" data-tablet-items="3"
+								data-items="6">
 								<div class="client-block">
 									<a href="https://www.stellarequipment.com/" target="_blank" title="Stellar Equipment">
 										<img src="images/stellar-logo.png" alt="Stellar Equipment">
@@ -176,12 +185,13 @@
 	<script src="script.js"></script>
 	<script src="js/offline.js"></script>
 	<script src="js/jquery-3.6.0.min.js"></script>
-	<script src="js/imagesloaded.pkgd.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
 	<script src='js/owl.carousel.min.js'></script>
 	<script>
-		$(".preloader").fadeOut(800, "linear")
-		$(".clients.owl-carousel").imagesLoaded().owlCarousel({
+		(function () {
+			$(".preloader").fadeOut(800, "linear");
+			$(".clients.owl-carousel").imagesLoaded().owlCarousel({
 				nav: !1,
 				items: 2,
 				loop: !1,
@@ -199,7 +209,8 @@
 						items: 6
 					}
 				}
-			})
+			});
+		})();
 	</script>
 </body>
 

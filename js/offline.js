@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  var body = document.querySelector('body');
+  let body = document.querySelector('body');
 
   //After DOM Loaded
   document.addEventListener('DOMContentLoaded', function (event) {
@@ -18,10 +18,10 @@
   function updateNetworkStatus() {
     if (navigator.onLine) {
 			body.classList.remove('offline');
-			console.log('Online');
+			body.classList.add('online');
     } else {
 			body.classList.add('offline');
-			console.log('Offline');
+			body.classList.remove('online');
     }
   }
 })();
