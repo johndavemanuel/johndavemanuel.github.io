@@ -12,8 +12,6 @@ var filesToCache = [
 	'js/bootstrap.min.js',
 	'js/imagesloaded.pkgd.min.js',
 	'js/owl.carousel.min.js',
-	'js/owl.carousel.min.js',
-
 ];
 
 // Start the service worker and cache all of the app's shell content
