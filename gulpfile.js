@@ -57,8 +57,8 @@ function concatScripts() {
 
 // COPIES AND MINIFY IMAGE TO
 function copyImages() {
-  return src('src/images/**/*.+(png|jpg|jpeg|gif|svg)')
-    // .pipe(newer('dist/img/'))
+  return src('src/images/**/*.+(png|jpg|jpeg|gif|svg|ico)')
+    .pipe(newer('dist/images/'))
     .pipe(imagemin())
     .pipe(dest('dist/images/'));
 }
