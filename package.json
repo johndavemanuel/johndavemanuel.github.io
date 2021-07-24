@@ -1,0 +1,33 @@
+{
+  "name": "johndavemanuel.github.io",
+  "version": "1.0.0",
+  "description": "portfolio",
+  "main": "script.js",
+  "scripts": {
+    "dev": "gulp dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johndavemanuel/johndavemanuel.github.io.git"
+  },
+  "author": "John Dave Manuel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johndavemanuel/johndavemanuel.github.io/issues"
+  },
+  "homepage": "https://github.com/johndavemanuel/johndavemanuel.github.io#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-rename": "^1.4.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-remove-code": "^3.0.4",
+    "gulp-remove-logging": "^1.2.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-uglify-es": "^1.0.4",
+    "gulp-imagemin": "^6.0.0",
+    "gulp-newer": "^1.4.0",
+    "del": "^5.0.0"
+  }
+}

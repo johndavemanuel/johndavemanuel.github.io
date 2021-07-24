@@ -1,15 +1,10 @@
-var staticCacheName = 'cacheCoreV2';
+var staticCacheName = 'cacheCoreV3';
 var filesToCache = [
   '/',
 	'index.html',
-	'css/bootstrap.min.css',
-	'css/owl.carousel.css',
-	'css/main.css',
-	'script.js',
-	'js/jquery-3.6.0.min.js',
-	'js/bootstrap.min.js',
-	'js/imagesloaded.pkgd.min.js',
-	'js/owl.carousel.min.js',
+	'register-service-worker.js',
+	'dist/css/main.min.css',
+	'dist/js/main.min.js',
 ];
 
 // Start the service worker and cache all of the app's shell content

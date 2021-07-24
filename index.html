@@ -9,16 +9,14 @@
 	<meta name="theme-color" content="#000000" />
 	<link rel="manifest" href="manifest.json">
 	<title>John Dave Manuel- Frontend Web Developer</title>
-	<link rel="shortcut icon" href="images/icons/favicon.ico">
-	<link rel="apple-touch-icon" href="images/icons/favicon.ico">
+	<link rel="shortcut icon" href="dist/images/icons/favicon.ico">
+	<link rel="apple-touch-icon" href="dist/images/icons/favicon.ico">
 	<meta name="apple-mobile-web-app-status-bar" content="#FFFFFF">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/fonts/fontawesome-free-5.12.1-web/css/all.min.css" type="text/css">
-	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-	<link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
-	<link rel="stylesheet" href="css/main.css" type="text/css">
+	<link rel="stylesheet" href="src/css/fonts/fontawesome-free-5.12.1-web/css/all.min.css" type="text/css">
+	<link rel="stylesheet" href="dist/css/main.min.css" type="text/css">
 </head>
 
 <body class="page">
@@ -137,43 +135,43 @@
 								data-items="6">
 								<div class="client-block">
 									<a href="https://www.stellarequipment.com/" target="_blank" rel="noopener" title="Stellar Equipment">
-										<img src="images/stellar-logo.png" alt="Stellar Equipment">
+										<img src="dist/images/stellar-logo.png" alt="Stellar Equipment">
 									</a>
 								</div>
 
 								<div class="client-block">
 									<a href="https://www.morjas.com/" target="_blank" rel="noopener" title="Morjas">
-										<img src="images/morjas-logo.svg" alt="Morjas">
+										<img src="dist/images/morjas-logo.svg" alt="Morjas">
 									</a>
 								</div>
 
 								<div class="client-block">
 									<a href="https://www.garboandfriends.com/" target="_blank" rel="noopener" title="Garbo and Friends">
-										<img src="images/garbo-logo.svg" alt="Garbo and Friends">
+										<img src="dist/images/garbo-logo.svg" alt="Garbo and Friends">
 									</a>
 								</div>
 
 								<div class="client-block">
 									<a href="https://www.musiksupporten.se/" target="_blank" rel="noopener" title="Musiksupporten">
-										<img src="images/musiksupporten-logo.svg" alt="Musiksupporten">
+										<img src="dist/images/musiksupporten-logo.svg" alt="Musiksupporten">
 									</a>
 								</div>
 
 								<div class="client-block">
 									<a href="https://www.dailysports.com/" target="_blank" rel="noopener" title="Dailysports">
-										<img src="images/dailysports-logo.svg" alt="Dailysports">
+										<img src="dist/images/dailysports-logo.svg" alt="Dailysports">
 									</a>
 								</div>
 
 								<div class="client-block">
 									<a href="https://www.softgoat.com/" target="_blank" rel="noopener" title="Softgoat">
-										<img src="images/softgoat-logo.svg" alt="Softgoat">
+										<img src="dist/images/softgoat-logo.svg" alt="Softgoat">
 									</a>
 								</div>
 
 								<div class="client-block">
 									<a href="https://stinaaj.com/" target="_blank" rel="noopener" title="Stinaaj">
-										<img src="images/stinaaj-logo.svg" alt="Stinaaj">
+										<img src="dist/images/stinaaj-logo.svg" alt="Stinaaj">
 									</a>
 								</div>
 							</div>
@@ -184,16 +182,12 @@
 		</div>
 	</div>
 
-	<script src="script.js"></script>
-	<script src="js/offline.js"></script>
-	<script src="js/jquery-3.6.0.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/imagesloaded.pkgd.min.js"></script>
-	<script src='js/owl.carousel.min.js'></script>
+	<script src="register-service-worker.js"></script>
+	<script src="dist/js/main.min.js"></script>
 	<script>
 		(function () {
 			$(".preloader").fadeOut(800, "linear");
-			$(".clients.owl-carousel").imagesLoaded().owlCarousel({
+			$(".clients.owl-carousel").owlCarousel({
 				nav: !1,
 				items: 2,
 				loop: !1,
