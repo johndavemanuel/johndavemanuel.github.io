@@ -2189,7 +2189,8 @@ ul.social-links li:last-child a {
 .clients.owl-carousel .owl-item img {
 	display: block;
 	width: 100%;
-	max-width: 100px
+	max-width: 100px;
+	filter: drop-shadow(0 0 0 white);
 }
 
 .clients.owl-carousel .owl-dots,
