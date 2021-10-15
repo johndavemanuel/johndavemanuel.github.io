@@ -79,4 +79,4 @@ function copyImages() {
 }
 
 
-exports.dev = series(cleanDist, compileSCSS, minifyCss, concatScripts, minifyScripts, copyImages);
+exports.default = series(cleanDist, compileSCSS, minifyCss, concatScripts, minifyScripts, copyImages);
