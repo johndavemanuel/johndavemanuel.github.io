@@ -1,10 +1,13 @@
-var staticCacheName = 'cacheCoreV4';
+var staticCacheName = 'cacheCoreV6';
 var filesToCache = [
   '/',
 	'index.html',
 	'register-service-worker.js',
 	'dist/css/main.min.css',
+	'dist/css/theme-light.css',
+	'dist/css/theme-dark.css',
 	'dist/js/main.min.js',
+	'dist/images/*'
 ];
 
 // Start the service worker and cache all of the app's shell content
