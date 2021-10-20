@@ -2,9 +2,9 @@
 	margin: 0 -10px;
 
 	img {
-    max-height: 40px;
+		max-height: 40px;
 		max-width: 40px;
-    margin: 10px;
+		margin: 10px;
 	}
 }
 
@@ -12,7 +12,14 @@
 	opacity: 1;
 
 	img {
-    height: 50px;
-    object-fit: contain;
+		height: 50px;
+		object-fit: contain;
 	}
+}
+
+.home-photo .hp-inner {
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
 }

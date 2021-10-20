@@ -21,7 +21,7 @@ function cleanDist(done) {
 
 // COMPILE SCSS INTO CSS
 function compileSCSS() {
-  return src(['src/scss/main.scss'])
+  return src(['src/scss/*.scss'])
     .pipe(sass({
       outputStyle: 'expanded',
       sourceComments: 'map',

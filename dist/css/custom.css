@@ -1,0 +1,33 @@
+/* line 1, src/scss/custom.scss */
+.tech-stack {
+  margin: 0 -10px;
+}
+
+/* line 4, src/scss/custom.scss */
+.tech-stack img {
+  max-height: 40px;
+  max-width: 40px;
+  margin: 10px;
+}
+
+/* line 11, src/scss/custom.scss */
+.client-block {
+  opacity: 1;
+}
+
+/* line 14, src/scss/custom.scss */
+.client-block img {
+  height: 50px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+/* line 20, src/scss/custom.scss */
+.home-photo .hp-inner {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/*# sourceMappingURL=../../scss */
