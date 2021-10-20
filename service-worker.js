@@ -1,4 +1,4 @@
-var staticCacheName = 'cacheCoreV6';
+var staticCacheName = 'cacheCoreV7';
 var filesToCache = [
   '/',
 	'index.html',
@@ -7,7 +7,7 @@ var filesToCache = [
 	'dist/css/theme-light.css',
 	'dist/css/theme-dark.css',
 	'dist/js/main.min.js',
-	'dist/images/*'
+	'dist/images/profile/avatar.png'
 ];
 
 // Start the service worker and cache all of the app's shell content
