@@ -33,6 +33,7 @@ $(document).ready(function() {
 	}
 
 	themeColorSwitch.on('change', function() {
+		$('body').css('visibility', 'hidden');
 		if (this.checked === true) {
 			setTheme('light');
 		} else {
@@ -41,7 +42,6 @@ $(document).ready(function() {
 	});
 
 	function setTheme(theme) {
-		$('body').css('visibility', 'hidden');
 		if (theme === 'light') {
 			$('[data-skin="light"]').attr('disabled', false).attr('rel', 'stylesheet');
 			$('[data-skin="dark"]').attr('disabled', true).attr('rel', '');
