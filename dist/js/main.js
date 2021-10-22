@@ -21375,8 +21375,13 @@ return jQuery;
 
 })(window.Zepto || window.jQuery, window, document);
 
-(function () {
+$(document).ready(function() {
+	console.log('custom.js loaded');
+
+	let themeColorSwitch = $('.switch__input');
+
 	$(".preloader").fadeOut(800, "linear");
+
 	$(".clients.owl-carousel").owlCarousel({
 		nav: !1,
 		items: 2,
@@ -21396,5 +21401,46 @@ return jQuery;
 			}
 		}
 	});
-})();
+
+	const themeStorage = localStorage.getItem('toggleState');
+	let initialState;
+
+	if (themeStorage === null) {
+		initialState = "light";
+		setTheme('light');
+	} else {
+		initialState = "dark";
+		setTheme('dark');
+	}
+
+	themeColorSwitch.on('change', function() {
+
+		if (this.checked === true) {
+			setTheme('light');
+		} else {
+			setTheme('dark');
+		}
+
+		console.log(this.checked);
+		console.log(localStorage.getItem('toggleState'));
+	});
+
+	function setTheme(theme) {
+		if (theme === 'light') {
+			$('[data-skin="light"]').attr('disabled', false).attr('rel', 'stylesheet');
+			$('[data-skin="dark"]').attr('disabled', true).attr('rel', '');
+			$('body').removeClass('dark');
+			$('body').addClass('light');
+			$('.switch__input').attr('checked', true);
+			localStorage.setItem('toggleState', 'light');
+		} else {
+			$('[data-skin="dark"]').attr('disabled', false).attr('rel', 'stylesheet');;
+			$('[data-skin="light"]').attr('disabled', true).attr('rel', '');
+			$('body').removeClass('light');
+			$('body').addClass('dark');
+			$('.switch__input').attr('checked', false);
+			localStorage.setItem('toggleState', 'dark');
+		}
+	}
+});
 //# sourceMappingURL=main.js.map

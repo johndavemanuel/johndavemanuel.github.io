@@ -21,7 +21,7 @@ function cleanDist(done) {
 
 // COMPILE SCSS INTO CSS
 function compileSCSS() {
-  return src(['src/scss/*.scss'])
+  return src(['src/scss/main.scss', 'src/scss/theme-dark.scss', 'src/scss/theme-light.scss'], )
     .pipe(sass({
       outputStyle: 'expanded',
       sourceComments: 'map',
@@ -61,7 +61,7 @@ function concatScripts() {
 // MINIFY SCRIPTS
 function minifyScripts() {
   return src('dist/js/main.js')
-    .pipe(removeLog())
+    // .pipe(removeLog())
     .pipe(removeCode({
       production: true
     }))
