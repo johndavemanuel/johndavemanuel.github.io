@@ -3,8 +3,6 @@ $(document).ready(function() {
 
 	let themeColorSwitch = $('.switch__input');
 
-	$(".preloader").fadeOut(800, "linear");
-
 	$(".clients.owl-carousel").owlCarousel({
 		nav: !1,
 		items: 2,
@@ -28,11 +26,11 @@ $(document).ready(function() {
 	const themeStorage = localStorage.getItem('toggleState');
 	let initialState;
 
-	if (themeStorage === null) {
-		initialState = "light";
+	if (themeStorage === null || themeStorage === 'light') {
+		initialState = 'light';
 		setTheme('light');
 	} else {
-		initialState = "dark";
+		initialState = 'dark';
 		setTheme('dark');
 	}
 

@@ -21405,11 +21405,11 @@ $(document).ready(function() {
 	const themeStorage = localStorage.getItem('toggleState');
 	let initialState;
 
-	if (themeStorage === null) {
-		initialState = "light";
+	if (themeStorage === null || themeStorage === 'light') {
+		initialState = 'light';
 		setTheme('light');
 	} else {
-		initialState = "dark";
+		initialState = 'dark';
 		setTheme('dark');
 	}
 
