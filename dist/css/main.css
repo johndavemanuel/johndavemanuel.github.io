@@ -12847,7 +12847,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 /* line 1, src/scss/custom.scss */
 body {
-  background-color: #fff;
+  background-color: #fff !important;
 }
 
 /* line 5, src/scss/custom.scss */

@@ -1,7 +1,8 @@
 $(document).ready(function() {
-	console.log('custom.js loaded');
 
 	let themeColorSwitch = $('.switch__input');
+
+	$(".preloader").fadeOut(800, "linear");
 
 	$(".clients.owl-carousel").owlCarousel({
 		nav: !1,
@@ -23,30 +24,24 @@ $(document).ready(function() {
 		}
 	});
 
-	const themeStorage = localStorage.getItem('toggleState');
-	let initialState;
+	const currentSelectedTheme = localStorage.getItem('toggleState');
 
-	if (themeStorage === null || themeStorage === 'light') {
-		initialState = 'light';
+	if (currentSelectedTheme === null || currentSelectedTheme === 'light') {
 		setTheme('light');
 	} else {
-		initialState = 'dark';
 		setTheme('dark');
 	}
 
 	themeColorSwitch.on('change', function() {
-
 		if (this.checked === true) {
 			setTheme('light');
 		} else {
 			setTheme('dark');
 		}
-
-		console.log(this.checked);
-		console.log(localStorage.getItem('toggleState'));
 	});
 
 	function setTheme(theme) {
+		$('body').css('visibility', 'hidden');
 		if (theme === 'light') {
 			$('[data-skin="light"]').attr('disabled', false).attr('rel', 'stylesheet');
 			$('[data-skin="dark"]').attr('disabled', true).attr('rel', '');
@@ -62,5 +57,6 @@ $(document).ready(function() {
 			$('.switch__input').attr('checked', false);
 			localStorage.setItem('toggleState', 'dark');
 		}
+		$('body').css('visibility', 'visible');
 	}
 });
