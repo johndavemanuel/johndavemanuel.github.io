@@ -21376,8 +21376,8 @@ return jQuery;
 })(window.Zepto || window.jQuery, window, document);
 
 $(document).ready(function() {
-
 	let themeColorSwitch = $('.switch__input');
+	$('body').css('visibility', 'hidden');
 
 	$(".preloader").fadeOut(800, "linear");
 
@@ -21402,7 +21402,6 @@ $(document).ready(function() {
 	});
 
 	const currentSelectedTheme = localStorage.getItem('toggleState');
-
 	if (currentSelectedTheme === null || currentSelectedTheme === 'light') {
 		setTheme('light');
 	} else {
