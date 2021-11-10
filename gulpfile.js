@@ -72,7 +72,7 @@ function minifyScripts() {
 
 // COPIES AND MINIFY IMAGE TO
 function copyImages() {
-  return src('src/images/**/*.+(png|jpg|jpeg|gif|svg|ico)')
+  return src('src/images/**/*.+(png|jpg|jpeg|gif|svg|ico|webp)')
     .pipe(newer('dist/images/'))
     .pipe(imagemin())
     .pipe(dest('dist/images/'));
