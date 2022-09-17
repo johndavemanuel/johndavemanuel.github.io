@@ -1,4 +1,4 @@
-var staticCacheName = "cacheCoreV16";
+var staticCacheName = "cacheCoreV19";
 var filesToCache = [
   "/",
   "index.html",
