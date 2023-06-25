@@ -227,7 +227,8 @@ function AvatarContainer({ className, ...props }) {
 
 function Avatar({ large = false, className, ...props }) {
   return (
-    <Link
+    // eslint-disable-next-line @next/next/no-html-link-for-pages
+    <a
       href="/"
       aria-label="Home"
       className={clsx(className, 'pointer-events-auto')}
@@ -243,7 +244,7 @@ function Avatar({ large = false, className, ...props }) {
         )}
         priority
       />
-    </Link>
+    </a>
   )
 }
 
