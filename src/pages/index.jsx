@@ -410,7 +410,7 @@ export default function Home({ articles }) {
           </div>
         </div>
       </Container>
-	  <SimpleLayout
+	  {/* <SimpleLayout
         title="Throughout my career, I have had the opportunity to work on a diverse range of projects, each presenting unique challenges and opportunities for growth."
         intro=" I have been fortunate to contribute to the success of several notable initiatives, and I am proud to share my experience with you."
       >
@@ -439,7 +439,21 @@ export default function Home({ articles }) {
             </Card>
           ))}
         </ul>
-      </SimpleLayout>
+      </SimpleLayout> */}
+	  <Container className="mt-24 md:mt-28">
+        <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
+          <div className="flex flex-col gap-16">
+		  <Tech />
+          </div>
+          <div className="space-y-10 lg:pl-16 xl:pl-24">
+            <Tech />
+          </div>
+        </div>
+      </Container>
+
+	  <Container className="mt-24 md:mt-28">
+		<Resume/>
+      </Container>
     </>
   )
 }
