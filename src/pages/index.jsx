@@ -262,6 +262,10 @@ function Tech() {
       logo: logoGulp,
     },
     {
+      title: 'Grunt',
+      logo: logoGrunt,
+    },
+    {
       title: 'Bootstrap',
       logo: logoBootstrap,
     },
@@ -293,12 +297,12 @@ function Tech() {
 
   return (
     <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
-      <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+      <h2 className="flex text-base font-bold tracking-tight text-zinc-800 dark:text-zinc-100">
         <span className="ml-3">
           Hands-on experience with various technologies and tools
         </span>
       </h2>
-      <ul className="mt-6 columns-4 space-y-4">
+      <ul className="mt-6 columns-1 space-y-4 lg:columns-4">
         {tech.map((techItem, techItemIndex) => (
           <li key={techItemIndex} className="flex gap-4">
             <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center">
@@ -361,12 +365,12 @@ function Exploring() {
 
   return (
     <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
-      <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+      <h2 className="flex text-base font-bold tracking-tight text-zinc-800 dark:text-zinc-100">
         <span className="ml-3">
           Actively exploring and experimenting with a range of technologies.
         </span>
       </h2>
-      <ul className="mt-6 columns-4 space-y-4">
+      <ul className="mt-6 columns-1 space-y-4 lg:columns-4">
         {tech.map((techItem, techItemIndex) => (
           <li key={techItemIndex} className="flex gap-4">
             <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center">
