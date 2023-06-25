@@ -121,9 +121,9 @@ function Article({ article }) {
 
 function SocialLink({ icon: Icon, ...props }) {
   return (
-    <Link className="group -m-1 p-1" {...props}>
+    <a className="group -m-1 cursor-pointer p-1" target="_blank" {...props}>
       <Icon className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" />
-    </Link>
+    </a>
   )
 }
 
@@ -186,7 +186,7 @@ function Resume() {
 
   return (
     <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
-      <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+      <h2 className="flex text-base font-bold tracking-tight text-zinc-800 dark:text-zinc-100">
         <span>Work Experience</span>
       </h2>
       <ol className="mt-6 space-y-4">
@@ -367,7 +367,7 @@ function Exploring() {
     <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
       <h2 className="flex text-base font-bold tracking-tight text-zinc-800 dark:text-zinc-100">
         <span className="ml-3">
-          Actively exploring and experimenting with a range of technologies.
+          Actively exploring and learning with a range of technologies
         </span>
       </h2>
       <ul className="mt-6 columns-1 space-y-4 lg:columns-4">
