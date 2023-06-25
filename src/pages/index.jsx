@@ -294,7 +294,9 @@ function Tech() {
   return (
     <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-        <span className="ml-3">Technologies & Tools</span>
+        <span className="ml-3">
+          Hands-on experience with various technologies and tools
+        </span>
       </h2>
       <ul className="mt-6 columns-4 space-y-4">
         {tech.map((techItem, techItemIndex) => (
@@ -360,7 +362,9 @@ function Exploring() {
   return (
     <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-        <span className="ml-3">Exploring</span>
+        <span className="ml-3">
+          Actively exploring and experimenting with a range of technologies.
+        </span>
       </h2>
       <ul className="mt-6 columns-4 space-y-4">
         {tech.map((techItem, techItemIndex) => (
