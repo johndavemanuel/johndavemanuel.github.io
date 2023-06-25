@@ -33,7 +33,7 @@ export const Container = forwardRef(function Container(
 ) {
   return (
     <OuterContainer ref={ref} {...props}>
-      <InnerContainer>{children}</InnerContainer>
+      <InnerContainer><>{children}</></InnerContainer>
     </OuterContainer>
   )
 })
