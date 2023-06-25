@@ -540,7 +540,7 @@ export default function Home({ articles }) {
             John Dave Manuel
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I'm a front-end web developer based in the Philippines with 5 years
+            I am a front-end web developer based in the Philippines with 5 years
             of industry experience. I have gained extensive knowledge and
             expertise in crafting exceptional digital experiences. I am
             committed to staying ahead of the curve by continuously exploring
