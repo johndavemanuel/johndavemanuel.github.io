@@ -293,8 +293,10 @@ function Tech() {
 		  ))}
 		</ol>
 		<Button href="#" variant="secondary" className="group mt-6 w-full">
-		  Download CV
-		  <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
+		 <>
+		 	Download CV
+		  	<ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
+		 </>
 		</Button>
 	  </div>
 	)
@@ -442,14 +444,12 @@ export default function Home({ articles }) {
       </SimpleLayout> */}
 	  <Container className="mt-24 md:mt-28">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
-			<>
 				<div className="flex flex-col gap-16">
 					<Tech />
 				</div>
 				<div className="space-y-10 lg:pl-16 xl:pl-24">
 					<Tech />
 				</div>
-			</>
         </div>
       </Container>
 
