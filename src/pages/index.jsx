@@ -37,6 +37,8 @@ import logoStorybook from '@/images/tech/explore/storybook.svg'
 import logoCypress from '@/images/tech/explore/cypress.svg'
 import logoMongoDB from '@/images/tech/explore/mongodb.svg'
 import logoExpress from '@/images/tech/explore/expressjs.svg'
+import logoChakraUI from '@/images/tech/explore/chakra.svg'
+import logoHeadlessUI from '@/images/tech/explore/headlessui.svg'
 
 import logoStellar from '@/images/projects/stellar-eq.jpg'
 import logoMorjas from '@/images/projects/morjas.svg'
@@ -361,6 +363,14 @@ function Exploring() {
       title: 'MongoDB',
       logo: logoMongoDB,
     },
+        {
+      title: 'Chakra UI',
+      logo: logoChakraUI,
+    },
+      {
+      title: 'Headless UI',
+      logo: logoHeadlessU,
+    },
   ]
 
   return (
@@ -438,7 +448,7 @@ export default function Home({ articles }) {
     {
       name: 'Stellar Equipment',
       description:
-        'Stellar Equipment create amazing technical outerwear with timeless design from cutting-edge materials – for running, hiking, climbing, ski & snowboarding.',
+        'Stellar Equipment creates amazing technical outerwear with timeless design from cutting-edge materials – for running, hiking, climbing, ski & snowboarding.',
       link: {
         href: 'https://www.stellarequipment.com/',
         label: 'stellarequipment.com',
@@ -465,7 +475,7 @@ export default function Home({ articles }) {
     {
       name: 'DailySports',
       description:
-        'Daily Sports is a Swedish fashion company that designs, produces and sells sports clothes for women worldwide.',
+        'Daily Sports is a Swedish fashion company that designs, produces, and sells sports clothes for women worldwide.',
       link: { href: 'https://www.dailysports.com/', label: 'dailysports.com' },
       //   logo: logoPlanetaria,
     },
@@ -493,7 +503,7 @@ export default function Home({ articles }) {
     {
       name: 'Nutrilett',
       description:
-        'Nutrilett is weight management products. When Nutrilett products are developed the primarily focuse is on two things: efficiency and good taste.',
+        'Nutrilett is weight management product. When Nutrilett products are developed the primary focuse is on two things: efficiency and good taste.',
       link: { href: 'https://www.nutrilett.se/', label: 'nutrilett.se' },
       //   logo: logoPlanetaria,
     },
@@ -507,14 +517,14 @@ export default function Home({ articles }) {
     {
       name: 'Beyond Retail',
       description:
-        'Beyond Retail is a consulting firm specialized in digital transformation, digital marketing and e-commerce.',
+        'Beyond Retail is a consulting firm specializing in digital transformation, digital marketing, and e-commerce.',
       link: { href: 'https://beyondretail.se/', label: 'beyondretail.se' },
       //   logo: logoPlanetaria,
     },
     {
       name: 'Sandberg Sweden',
       description:
-        'Swedish luxury in our way. Every piece of Sandberg jewellery is handmade in our workshop from recycled gold and silver.',
+        'Swedish luxury in our way. Every piece of Sandberg jewelry is handmade in our workshop from recycled gold and silver.',
       link: {
         href: 'https://sandbergsweden.com/en/',
         label: 'sandbergsweden.com',
