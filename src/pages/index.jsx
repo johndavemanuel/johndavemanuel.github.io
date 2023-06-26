@@ -369,7 +369,7 @@ function Exploring() {
     },
       {
       title: 'Headless UI',
-      logo: logoHeadlessU,
+      logo: logoHeadlessUI,
     },
   ]
 
