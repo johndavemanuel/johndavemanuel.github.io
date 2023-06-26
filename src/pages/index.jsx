@@ -339,6 +339,14 @@ function Exploring() {
       title: 'NextJS',
       logo: logoNext,
     },
+            {
+      title: 'Chakra UI',
+      logo: logoChakraUI,
+    },
+      {
+      title: 'Headless UI',
+      logo: logoHeadlessUI,
+    },
     {
       title: 'TypeScript',
       logo: logoTypeScript,
@@ -363,14 +371,7 @@ function Exploring() {
       title: 'MongoDB',
       logo: logoMongoDB,
     },
-        {
-      title: 'Chakra UI',
-      logo: logoChakraUI,
-    },
-      {
-      title: 'Headless UI',
-      logo: logoHeadlessUI,
-    },
+
   ]
 
   return (
