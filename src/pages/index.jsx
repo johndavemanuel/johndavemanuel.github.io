@@ -559,7 +559,7 @@ export default function Home({ articles }) {
             John Dave Manuel
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            Im a front-end web developer based in the Philippines with 5 years
+            I am a front-end web developer based in the Philippines with 5 years
             of industry experience. I have gained extensive knowledge and
             expertise in crafting exceptional digital experiences. I am
             committed to staying ahead of the curve by continuously exploring
@@ -588,7 +588,7 @@ export default function Home({ articles }) {
       </Container>
       <SimpleLayout
         title="Throughout my career, I have had the opportunity to work on a diverse range of projects, each presenting unique challenges and opportunities for growth."
-        intro=" I have been fortunate to contribute to the success of several notable initiatives, and I am proud to share my experience with you."
+{/*         intro=" I have been fortunate to contribute to the success of several notable initiatives, and I am proud to share my experience with you." */}
       >
         <ul
           role="list"
