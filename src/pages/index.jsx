@@ -39,6 +39,7 @@ import logoMongoDB from '@/images/tech/explore/mongodb.svg'
 import logoExpress from '@/images/tech/explore/expressjs.svg'
 import logoChakraUI from '@/images/tech/explore/chakra.svg'
 import logoHeadlessUI from '@/images/tech/explore/headlessui.svg'
+import logoStyledComponents from '@/images/tech/explore/styled-components.png'
 
 import logoStellar from '@/images/projects/stellar-eq.jpg'
 import logoMorjas from '@/images/projects/morjas.svg'
@@ -346,6 +347,10 @@ function Exploring() {
       {
       title: 'Headless UI',
       logo: logoHeadlessUI,
+    },
+      {
+      title: 'Styled Components',
+      logo: ogoStyledComponents,
     },
     {
       title: 'TypeScript',
