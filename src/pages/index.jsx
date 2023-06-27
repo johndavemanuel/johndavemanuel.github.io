@@ -588,7 +588,6 @@ export default function Home({ articles }) {
       </Container>
       <SimpleLayout
         title="Throughout my career, I have had the opportunity to work on a diverse range of projects, each presenting unique challenges and opportunities for growth."
-{/*         intro=" I have been fortunate to contribute to the success of several notable initiatives, and I am proud to share my experience with you." */}
       >
         <ul
           role="list"
