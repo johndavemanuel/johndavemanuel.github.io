@@ -350,7 +350,7 @@ function Exploring() {
     },
       {
       title: 'Styled Components',
-      logo: ogoStyledComponents,
+      logo: logoStyledComponents,
     },
     {
       title: 'TypeScript',
