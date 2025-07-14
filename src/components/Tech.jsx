@@ -4,10 +4,8 @@ import logoHTML from '@/images/tech/html5.svg'
 import logoCSS from '@/images/tech/css.svg'
 import logoJS from '@/images/tech/javascript.svg'
 import logoJquery from '@/images/tech/jquery.svg'
-import logoLess from '@/images/tech/less.svg'
 import logoSCSS from '@/images/tech/sass.svg'
 import logoGulp from '@/images/tech/gulp.svg'
-import logoGrunt from '@/images/tech/gruntjs.svg'
 import logoBootstrap from '@/images/tech/bootstrap.svg'
 import logoBulma from '@/images/tech/bulma.svg'
 import logoTailwind from '@/images/tech/tailwind.svg'
@@ -15,6 +13,8 @@ import logoNPM from '@/images/tech/npm.svg'
 import logoYarn from '@/images/tech/yarn.svg'
 import logoGit from '@/images/tech/git.svg'
 import logoGitHub from '@/images/tech/github.svg'
+import logoLiquid from '@/images/tech/liquid.png'
+import logoShadcnUI from '@/images/tech/shadcnui.png'
 
 const tech = [
   {
@@ -34,10 +34,6 @@ const tech = [
     logo: logoJquery,
   },
   {
-    title: 'LESS',
-    logo: logoLess,
-  },
-  {
     title: 'SASS',
     logo: logoSCSS,
   },
@@ -45,10 +41,7 @@ const tech = [
     title: 'Gulp',
     logo: logoGulp,
   },
-  {
-    title: 'Grunt',
-    logo: logoGrunt,
-  },
+  ,
   {
     title: 'Bootstrap',
     logo: logoBootstrap,
@@ -76,6 +69,14 @@ const tech = [
   {
     title: 'Github',
     logo: logoGitHub,
+  },
+  {
+    title: 'Liquid',
+    logo: logoLiquid,
+  },
+  {
+    title: 'Shadcn UI',
+    logo: logoShadcnUI,
   },
 ]
 

@@ -61,7 +61,9 @@ export default function Home() {
       <Container className="mt-12">
         <TechExploring />
       </Container>
-      <Projects />
+      <Projects title="WORDPRESS" type="Wordpress" />
+      <Projects title="REACT" type="React" />
+      <Projects title="SHOPIFY" type="Shopify" />
       <Container className="mt-12">
         <Resume />
       </Container>

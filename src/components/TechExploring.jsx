@@ -10,6 +10,7 @@ import logoExpress from '@/images/tech/explore/expressjs.svg'
 import logoChakraUI from '@/images/tech/explore/chakra.svg'
 import logoHeadlessUI from '@/images/tech/explore/headlessui.svg'
 import logoStyledComponents from '@/images/tech/explore/styled-components.png'
+import logoGraphQL from '@/images/tech/explore/graphql.svg'
 
 const tech = [
   {
@@ -56,6 +57,10 @@ const tech = [
     title: 'MongoDB',
     logo: logoMongoDB,
   },
+  {
+    title: 'GraphQL',
+    logo: logoGraphQL,
+  },
 ]
 
 const TechExploring = () => {
@@ -63,7 +68,8 @@ const TechExploring = () => {
     <div className="p-6 rounded-2xl border border-zinc-100 dark:border-zinc-700/40">
       <h2 className="flex text-base font-bold tracking-tight text-zinc-800 dark:text-zinc-100">
         <span className="ml-3">
-          Actively exploring and learning with a range of technologies
+          Dedicated to exploring and understanding a variety of modern
+          technologies
         </span>
       </h2>
       <ul className="mt-6 space-y-4 columns-1 lg:columns-4">

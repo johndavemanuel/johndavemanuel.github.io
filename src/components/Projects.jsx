@@ -10,12 +10,14 @@ const projects = [
       href: 'https://www.stellarequipment.com/',
       label: 'stellarequipment.com',
     },
+    type: 'Wordpress',
   },
   {
     name: 'Morjas',
     description:
       'Classic shoes, contemporary take. Crafted by hand in over 125 steps in Almansa, Spain. We make high-quality shoes and accessories in a timeless design.',
     link: { href: 'https://www.morjas.com/', label: 'morjas.com' },
+    type: 'React',
   },
   {
     name: 'Garbo and Friends',
@@ -25,48 +27,56 @@ const projects = [
       href: 'https://www.garboandfriends.com/',
       label: 'garboandfriends.com',
     },
+    type: 'Wordpress',
   },
   {
     name: 'DailySports',
     description:
       'Daily Sports is a Swedish fashion company that designs, produces, and sells sports clothes for women worldwide.',
     link: { href: 'https://www.dailysports.com/', label: 'dailysports.com' },
+    type: 'Wordpress',
   },
   {
     name: 'ByMalina',
     description:
       'The go-to brand for women who love irresistible patterns and timeless silhouettes. Developing each season to a wider range of clothing.',
     link: { href: 'https://bymalina.com/', label: 'bymalina.com' },
+    type: 'React',
   },
   {
     name: 'Stinaaj',
     description:
       'FASHION MEETS INNOVATION | Our patented orthopedic technology works for all types of feet. Prevent pain and treat your body well.',
     link: { href: 'https://stinaaj.com/', label: 'stinaaj.com' },
+    type: 'Wordpress',
   },
   {
     name: 'Ella And Il',
     description:
       'Get inspired and fill up your wardrobe with comfortable quality garments from our new online store! Comfortable clothes of high quality.',
     link: { href: 'https://www.ellaandil.com/', label: 'ellaandil.com' },
+    type: 'Wordpress',
   },
   {
     name: 'Nutrilett',
     description:
       'Nutrilett is weight management product. When Nutrilett products are developed the primary focuse is on two things: efficiency and good taste.',
     link: { href: 'https://www.nutrilett.se/', label: 'nutrilett.se' },
+    type: 'Wordpress',
   },
   {
     name: 'OA Devold',
     description:
       'Using our knowledge, rooted in our Devold heritage, we continue the tradition of mastering wool.',
     link: { href: 'https://oadevold.com/', label: 'oadevold.com' },
+    type: 'React',
   },
   {
     name: 'Beyond Retail',
     description:
       'Beyond Retail is a consulting firm specializing in digital transformation, digital marketing, and e-commerce.',
     link: { href: 'https://beyondretail.se/', label: 'beyondretail.se' },
+    type: 'Wordpress',
   },
   {
     name: 'Sandberg Sweden',
@@ -75,6 +85,7 @@ const projects = [
     link: {
       href: 'https://sandbergsweden.com/en/',
       label: 'sandbergsweden.com',
+      type: 'Wordpress',
     },
   },
   {
@@ -85,6 +96,67 @@ const projects = [
       href: 'https://musiksupporten.se',
       label: 'musiksupporten.se',
     },
+    type: 'Wordpress',
+  },
+  {
+    name: 'Voyado',
+    description:
+      'SaaS company helping retail brands create hyper-relevant shopping experiences, increase customer loyalty and drive business growth.',
+    link: {
+      href: 'https://voyado.com/',
+      label: 'voyado.com',
+    },
+    type: 'Wordpress',
+  },
+  {
+    name: 'Bilda',
+    description:
+      'A staffing company with a focus on Stockholm and operations throughout the country.',
+    link: {
+      href: 'https://bildapersonal.se/',
+      label: 'bildapersonal.se',
+    },
+    type: 'Wordpress',
+  },
+  {
+    name: 'Zeppelin',
+    description:
+      'Agency for Caterpillar in Sweden. With us you can rent or buy Cat machines for all construction and civil engineering projects.',
+    link: {
+      href: 'https://zeppelin-cat.se/',
+      label: 'zeppelin',
+    },
+    type: 'Wordpress',
+  },
+  {
+    name: 'Bjorn Axen',
+    description:
+      'We develop hair care products with carefully selected ingredients and hypoallergenic ingredients to ensure the well-being of the hair and scalp.',
+    link: {
+      href: 'https://www.bjornaxen.com/',
+      label: 'bjornaxen.com',
+    },
+    type: 'Shopify',
+  },
+  {
+    name: 'Teddykompaniet',
+    description:
+      'Manufacturers and sells children soft plush toys which combine Scandinavian design with unique patterns and contemporary design.',
+    link: {
+      href: 'https://www.teddykompaniet.com/',
+      label: 'teddykompaniet.com',
+    },
+    type: 'Shopify',
+  },
+  {
+    name: 'Rapunzel of Sweden',
+    description:
+      'Explore premium hair extensions, vegan hair care, and styling tools. Discover beautiful hair solutions designed to match your style and needs..',
+    link: {
+      href: 'https://www.rapunzelofsweden.com',
+      label: 'rapunzelofsweden',
+    },
+    type: 'React',
   },
 ]
 
@@ -99,14 +171,17 @@ function LinkIcon(props) {
   )
 }
 
-const Projects = () => {
+const Projects = ({ title, type }) => {
+  const filteredProjects = type
+    ? projects.filter((project) => project.type === type)
+    : projects
   return (
-    <SimpleLayout title="Throughout my career, I have had the opportunity to work on a diverse range of projects, each presenting unique challenges and opportunities for growth.">
+    <SimpleLayout title={title}>
       <ul
         role="list"
         className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
       >
-        {projects.map((project) => (
+        {filteredProjects.map((project) => (
           <Card as="li" key={project.name}>
             <h2 className="text-base font-semibold text-zinc-800 dark:text-zinc-100">
               <Card.Link href={project.link.href}>{project.name}</Card.Link>
