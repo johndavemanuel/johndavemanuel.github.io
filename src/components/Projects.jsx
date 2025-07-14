@@ -187,7 +187,7 @@ const Projects = ({ title, type }) => {
               <Card.Link href={project.link.href}>{project.name}</Card.Link>
             </h2>
             <Card.Description>{project.description}</Card.Description>
-            <p className="flex relative z-10 mt-6 text-sm font-medium transition text-zinc-400 group-hover:text-teal-500 dark:text-zinc-200">
+            <p className="flex relative z-10 mt-auto text-sm font-medium transition text-zinc-400 group-hover:text-teal-500 dark:text-zinc-200">
               <LinkIcon className="flex-none w-6 h-6" />
               <span className="ml-2">{project.link.label}</span>
             </p>
