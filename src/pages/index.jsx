@@ -32,7 +32,7 @@ export default function Home() {
             John Dave Manuel
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I'm passionate about crafting engaging, user-centric digital
+            I am passionate about crafting engaging, user-centric digital
             experiences. I have experienced in building responsive,
             high-performing websites using React, Shopify (Liquid), and
             WordPress, and have worked with various eCommerce brands. With a
